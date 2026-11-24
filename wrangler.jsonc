@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // Must match the Worker name in the Cloudflare dashboard.
+  "name": "uncover-math-genius",
+  "compatibility_date": "2026-11-01",
+  // Static site: no Worker script, only the files in docs/.
+  "assets": {
+    "directory": "./docs",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}
